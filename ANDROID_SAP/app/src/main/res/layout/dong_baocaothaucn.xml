@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_column="0"
+            android:id="@+id/tvmavtbcthaucn"
+            android:hint="Mã vt"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_column="1"
+            android:paddingLeft="10dp"
+            android:id="@+id/tvtenvtbcthaucn"
+            android:hint="Tên vt"
+            android:textSize="11dp"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_column="2"
+            android:paddingLeft="10dp"
+            android:id="@+id/tvdvtbcthaucn"
+            android:hint="Đvt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_column="3"
+            android:id="@+id/tvslttbcthaucn"
+            android:hint="SL-trúng thầu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_column="4"
+            android:background="#ff0"
+            android:id="@+id/tvdgttbcthaucn"
+            android:hint="ĐG-trúng thầu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_column="5"
+            android:id="@+id/tvttttbcthaucn"
+            android:hint="TT"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_column="6"
+            android:id="@+id/tvsldgbcthaucn"
+            android:hint="SL-đã giao"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_column="7"
+            android:background="#ff0"
+            android:paddingLeft="10dp"
+            android:id="@+id/tvslqdbcthaucn"
+            android:hint="SL-quy đổi"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        </TableRow>
+
+    </LinearLayout>
+
+</TableLayout>

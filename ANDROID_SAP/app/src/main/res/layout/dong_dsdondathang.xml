@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:padding="14dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_weight="4"
+        android:id="@+id/textViewdoituong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textAlignment="center"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/textViewngayct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="19dp"
+
+        android:layout_toEndOf="@+id/textViewdoituong"
+        android:inputType="datetime"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/textViewtongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="19dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/textViewtinhtrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:layout_marginTop="19dp"
+        android:background="#FF6D00"
+        android:textColor="#F8F8F0"
+        android:text="TextView" />
+
+    <ImageView
+        android:layout_weight="0"
+        android:id="@+id/imagedeleteDDH"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/textViewtinhtrang"
+        app:srcCompat="@drawable/delete1" />
+
+    <Button
+        android:text="Xem"
+        android:id="@+id/buttonxemddh"
+        android:layout_weight="0"
+        android:textColor="#808008"
+        android:background="@drawable/botronsearch"
+        android:layout_marginTop="19dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+    </Button>
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>

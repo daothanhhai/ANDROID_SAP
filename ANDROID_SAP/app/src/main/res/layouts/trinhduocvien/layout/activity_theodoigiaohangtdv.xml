@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_theodoigiaohangtdv">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_weight="1"
+            android:textSize="11dp"
+            android:id="@+id/editTexttnghtdv"
+            android:hint="Từ Ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"/>
+        <EditText
+            android:layout_weight="1"
+            android:textSize="11dp"
+            android:id="@+id/editTextdnghtdv"
+            android:hint="Đến Ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:layout_weight="8"
+            android:id="@+id/actdttdgh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ma Đt"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagedttdgh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+        <Button
+            android:id="@+id/buttonbcghtdv"
+            android:text="Xem BC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:id="@+id/tbghtdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:id="@+id/tbrowghtdv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvdtghtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Đối tượng"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:typeface="sans"
+                            android:textSize="14dp"
+                            android:textColor="#0626DC"
+                            android:background="#FFC107"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvhdghtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số Ct"
+                            android:typeface="sans"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="#FFC107"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvngayghtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ngày Ct"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:padding="10dp"
+                            android:background="#FFC107"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvndhghtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ngày Đh"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="#FFC107"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvnhtdhghtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ngày HT Đh"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="#FFC107"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvnghtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ngày GH"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="#FFC107"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

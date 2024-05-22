@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list tools:ignore="NamespaceTypo"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shadow_top"/>
+    <item>
+        <shape android:shape="rectangle">
+
+            <corners
+
+                     android:topRightRadius="20dp"
+                     android:bottomRightRadius="20dp"
+                     android:bottomLeftRadius ="20dp"
+                     android:topLeftRadius="20dp"/>
+            <gradient android:angle="225"
+                android:startColor="#F5FAFD" android:centerColor="#F7FEFF"
+                android:endColor="#F1D4DE"/>
+
+        </shape>
+
+    </item>
+</layer-list>
+
+
+

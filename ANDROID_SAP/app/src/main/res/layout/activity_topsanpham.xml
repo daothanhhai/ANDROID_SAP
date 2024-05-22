@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_topsanpham">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTexttungay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Từ Ngày"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextdenngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Đến Ngày"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTexttungay" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="80dp"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/buttonchaybaocao"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#101010"
+            android:drawableLeft="@android:drawable/btn_star_big_on"
+            android:text="Xem báo cáo"
+            android:textColor="#FFFFF3"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextdenngay" />
+
+        <Button
+            android:id="@+id/buttontongdoanhthu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:text=""
+            android:textColor="#FAFAF5"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonchaybaocao"
+            app:layout_constraintTop_toBottomOf="@+id/editTextdenngay" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="160dp"
+        android:orientation="horizontal"
+
+        tools:ignore="MissingConstraints">
+
+        <GridView
+            android:divider="#009688"
+            android:dividerHeight="2dp"
+            android:verticalSpacing="20dp"
+
+            android:horizontalSpacing="10dp"
+            android:id="@+id/griviewtopsanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="139dp"
+
+
+
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

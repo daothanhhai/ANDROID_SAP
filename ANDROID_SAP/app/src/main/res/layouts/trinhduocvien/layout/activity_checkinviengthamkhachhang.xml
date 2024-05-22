@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_checkinviengthamkhachhang">
+
+    <LinearLayout
+        android:background="#00BFA5"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Thời gian viếng thăm:">
+
+        </TextView>
+
+        <TextView
+            android:textColor="#DD2C00"
+            android:textStyle="bold"
+            android:id="@+id/tvgiodtvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00 : 00 : 00">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:id="@+id/tvmkhcivt"
+            android:layout_weight="3"
+            android:text="Mã Kh"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:id="@+id/tvtkhcivt"
+            android:layout_weight="7"
+            android:text="Tên kh"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:id="@+id/tvdccivt"
+            android:text="địa chỉ"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:paddingBottom="20dp"
+            android:id="@+id/tvdtcivt"
+            android:text="điện thoại"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <Button
+            android:drawableLeft="@drawable/dienthoai"
+            android:layout_weight="3"
+            android:id="@+id/buttondhcivt"
+            android:background="#095A33"
+            android:textColor="#FBFBF5"
+            android:text="Đặt hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:drawableLeft="@drawable/camera"
+            android:layout_weight="2"
+            android:id="@+id/buttonchcivt"
+            android:background="#FF6D00"
+            android:textColor="#FBFBF5"
+            android:text="Chụp ảnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:drawableLeft="@drawable/camera"
+            android:layout_weight="2"
+            android:id="@+id/buttonch1civt"
+            android:background="#2962FF"
+            android:textColor="#FBFBF5"
+            android:text="Lưu ảnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:drawableLeft="@drawable/cross"
+            android:layout_weight="4"
+            android:id="@+id/buttoncovt"
+            android:background="#00B8D4"
+            android:textColor="#FBFBF5"
+            android:text="Check Out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagevtkh"
+            app:srcCompat="@null"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/edkskhcivt"
+            android:hint="Khảo sát khách hàng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_congnotheokhachhang">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittexttncnkh"
+            android:hint="Từ ngày"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittextdncnkh"
+            android:hint="Đến Ngày"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:layout_weight="8"
+            android:id="@+id/actcnkh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Ma Đt"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagecnkh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+        <Button
+            android:layout_weight="0"
+            android:background="@drawable/botronsearch"
+            android:id="@+id/buttonbccnkh"
+            android:text="Xem BC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:id="@+id/tbcnkh"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:id="@+id/tbrcnkh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvdtcnkh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Khách hàng"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvsodudaucnkh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số dư đầu"
+                            android:typeface="sans"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvsophatsinhcnkh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số phát sinh"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtranocnkh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Trả Nợ"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvsoducuoicnkh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Dư cuối"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

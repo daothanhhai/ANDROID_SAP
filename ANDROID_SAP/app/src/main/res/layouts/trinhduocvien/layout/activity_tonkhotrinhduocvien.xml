@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_tonkhotrinhduocvien">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextdntktdv"
+            android:hint="Đến Ngày"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actvtktdv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:hint="Mã Vt"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagetktdv"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+        <Button
+            android:id="@+id/buttonbctktdv"
+            android:text="Xem BC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:paddingLeft="20dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Vật tư"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:paddingLeft="130dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Dvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:paddingLeft="60dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Số Lô"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:paddingLeft="50dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Hạn Dùng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+
+            android:layout_weight="2"
+            android:paddingLeft="60dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Tồn Kho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/progress_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal|vertical">
+                <TableLayout
+                    android:id="@+id/tbtktdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:id="@+id/tbrowtktdv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="10"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

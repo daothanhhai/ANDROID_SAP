@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dondathangtdv"
+    tools:context=".activity_dondathangtdv">
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edngayctdhtdv"
+            android:layout_weight="3"
+            android:hint="Ngày đơn hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="" />
+        <AutoCompleteTextView
+            android:layout_alignParentTop="true"
+            android:layout_weight="7"
+            android:id="@+id/actmdtdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mã đối tượng"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgmdtdhtdv"
+            android:padding="5dp"
+            android:layout_alignTop="@id/actv1"
+            android:layout_alignBottom="@id/actv1"
+            android:layout_alignRight="@id/actv1"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edhvtdhtdv"
+            android:visibility="invisible"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:hint="Họ và tên"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/eddcdhtdv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"
+            android:inputType="textPersonName"
+            android:text="" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="10"
+            android:id="@+id/ednddhtdv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nội dung"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:layout_weight="0"
+            android:id="@+id/eddgdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Diễn giải"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_weight="10"
+            android:id="@+id/acthopdongdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Hợp đồng"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imghopdongdhtdv"
+            android:padding="5dp"
+            android:layout_alignTop="@id/acthopdongdhtdv"
+            android:layout_alignBottom="@id/acthopdongdhtdv"
+            android:layout_alignRight="@id/acthopdongdhtdv"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <AutoCompleteTextView
+            android:id="@+id/actmavtdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="item"
+            android:lineSpacingMultiplier="2"
+            android:completionThreshold="1"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgmvtdhtdv"
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:layout_alignTop="@id/actmavtdhtdv"
+            android:layout_alignBottom="@id/actmavtdhtdv"
+            android:layout_alignRight="@id/actmavtdhtdv"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="6"
+            android:textSize="13dp"
+            android:id="@+id/edtvtdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+        <CheckBox
+            android:id="@+id/checkkmdhtdv"
+            android:layout_weight="1"
+            android:hint="KM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <AutoCompleteTextView
+            android:id="@+id/actctkmdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="CTKM"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagectkmdhtdv"
+            android:padding="5dp"
+            android:layout_alignTop="@id/actctkmdhtdv"
+            android:layout_alignBottom="@id/actctkmdhtdv"
+            android:layout_alignRight="@id/actctkmdhtdv"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="2"
+            android:hint="Số lượng"
+            android:id="@+id/edsoluongdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="" />
+
+
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/edgiagocdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Giá gốc"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edchietkhaudhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CK"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:layout_weight="3"
+            android:id="@+id/eddongiadhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Đơn giá"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/edthanhtiendhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Thành tiền"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#2962FF"
+            android:textColor="#FBFCFE"
+            android:text="Tổng Tiền Hàng Tặng"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <EditText
+            android:textAlignment="viewEnd"
+            android:textColor="#DD2C00"
+            android:layout_weight="7"
+            android:textSize="20dp"
+            android:id="@+id/edgiatrithuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Giá trị KM Hàng Tặng Hàng"
+            android:inputType="textPersonName"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/btthemdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm" />
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/btxoadhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/btluudhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu" />
+
+        <Button
+            android:background="#FFAB00"
+            android:layout_weight="2"
+            android:id="@+id/bttinhkmdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tính KM" />
+
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/edcodetl2dhtdv"
+            android:hint="Code TL2"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_weight="1"
+            android:choiceMode="multipleChoice"
+            android:id="@+id/lvddhtdv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#EAEAE6"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Tong tiền N1"
+                    android:textColor="#FF6D00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:layout_weight="5"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#FF6D00"
+                    android:id="@+id/tvtienhanggn1ddhtdv"
+                    android:hint="Tiền hàng giá nguyên N1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="4"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#0091EA"
+                    android:id="@+id/tvtlgn1ddhtdv"
+                    android:hint="TL N1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Tong tiền N2"
+                    android:textColor="#FF6D00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:layout_weight="5"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#FF6D00"
+                    android:id="@+id/tvtienhanggn2ddhtdv"
+                    android:hint="Tiền hàng giá nguyên N2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_weight="4"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#0091EA"
+                    android:id="@+id/tvtlgn2ddhtdv"
+                    android:hint="TL N2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Tổng ComBo"
+                    android:textColor="#FF6D00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:layout_weight="9"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#DD2C00"
+                    android:id="@+id/tvtongcomboddhtdv"
+                    android:hint="Tổng CB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Tổng GT KM"
+                    android:textColor="#FF6D00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:layout_weight="9"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#DD2C00"
+                    android:id="@+id/tvtonggtkmddhtdv"
+                    android:hint="Tổng GTKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:padding="15dp"
+            android:background="#EAEAE6"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:weightSum="10"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_weight="1"
+                 android:textSize="20dp"
+                 android:text="Tiền hàng "
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"></TextView>
+
+             <TextView
+                android:layout_weight="9"
+                 android:textSize="20dp"
+                 android:textAlignment="textEnd"
+                 android:background="#FAF7F6"
+                 android:textColor="#FF6D00"
+                 android:id="@+id/tvtienhangddhtdv"
+                 android:hint="Tiền Hàng"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+
+             </TextView>
+
+         </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Thuế         "
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="9"
+                    android:id="@+id/tvthueddhtdv"
+                    android:hint="Thuế"
+                    android:background="#FAF7F6"
+                    android:textColor="#FF6D00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Tổng cộng"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:textAlignment="textEnd"
+                    android:textSize="20dp"
+                    android:layout_weight="9"
+                    android:id="@+id/tvtongcongddhtdv"
+                    android:hint="Tổng cộng"
+                    android:background="#FAF7F6"
+                    android:textColor="#FF6D00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

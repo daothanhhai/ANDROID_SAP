@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_doanhthutheothang">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <AutoCompleteTextView
+        android:id="@+id/atcquythang"
+        android:hint="Chọn Quý"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgquythang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/atcquythang"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/atcquynamthang"
+        android:hint="Chọn Năm"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgquynamthang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewdoanhthutheothang"
+        android:layout_width="180dp"
+        android:layout_height="102dp"
+
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewtongtylequy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atcquythang" />
+
+    <TextView
+        android:id="@+id/textViewkhoantheoquy"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textViewtongtylequy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewdoanhthutheothang"
+        app:layout_constraintTop_toBottomOf="@+id/atcquythang" />
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewtongtylequy"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF9800"
+            android:textSize="20dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/bardt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.939" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bardt"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFF8"
+            app:layout_constraintBottom_toTopOf="@+id/tbdttt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UnknownId">
+
+        </com.github.mikephil.charting.charts.BarChart>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/tbdttt"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+
+            android:layout_alignParentStart="true"
+            android:stretchColumns="*"
+            android:background="#FBFBF8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:id="@+id/tbrow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thời gian"
+                    android:textSize="14dp"
+                    android:textColor="#0626DC"
+                    android:background="@android:color/holo_blue_bright"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doanh Thu"
+                    android:textSize="14dp"
+                    android:textColor="#0626DC"
+                    android:background="@android:color/holo_blue_bright"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kế hoạch"
+                    android:textSize="14dp"
+                    android:textColor="#0626DC"
+                    android:background="@android:color/holo_blue_bright"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tỷ lệ"
+                    android:textSize="14dp"
+                    android:textColor="#0626DC"
+                    android:background="@android:color/holo_blue_bright"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

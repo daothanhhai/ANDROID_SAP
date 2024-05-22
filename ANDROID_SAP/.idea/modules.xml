@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ANDROID_SAP.iml" filepath="$PROJECT_DIR$/.idea/modules/ANDROID_SAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ANDROID_SAP.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

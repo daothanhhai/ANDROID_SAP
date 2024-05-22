@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#f1f2f9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTexttungay"
+            android:hint="Từ Ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+
+
+        <EditText
+            android:id="@+id/editTextdenngay"
+            android:hint="Đến Ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonchaybaocao"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:background="#101010"
+            android:drawableLeft="@android:drawable/btn_star_big_on"
+            android:text="Xem báo cáo"
+            android:textColor="#FFFFF3"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#FAFAF5"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="#03A9F4"
+            android:id="@+id/buttontongdoanhthu"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_weight="3"
+            android:paddingLeft="20dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Đối tượng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_weight="3"
+            android:paddingLeft="85dp"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:text="Tổng tiền"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <GridView
+        android:divider="#2196F3"
+        android:dividerHeight="2dp"
+        android:id="@+id/gridviewdoanhthu"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+    </GridView>
+
+
+</LinearLayout>

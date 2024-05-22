@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/banner"
+        android:layout_margin="@dimen/material_emphasis_medium">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="@dimen/material_emphasis_medium"
+            android:textSize="120dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:layout_marginStart="@dimen/material_emphasis_medium"
+              android:layout_marginTop="@dimen/material_emphasis_medium"
+              android:layout_marginEnd="10dp"
+              android:textSize="13dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:id="@+id/btnshow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close_btn"></TextView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

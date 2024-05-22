@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <item android:title="Main Menu"
+       app:showAsAction="always">
+       <menu><item android:title="Báo Cáo Quản Trị" android:id="@+id/menubcqt"><menu>
+
+<item
+        android:id="@+id/menudtbh"
+
+        android:title="Doanh Thu Khách Hàng"
+        app:showAsAction="never"/>
+<item
+        android:id="@+id/menudttheokh"
+
+        android:title="Doanh Thu Theo Quí"
+        app:showAsAction="never"/>
+<item
+        android:id="@+id/menudttheothang"
+
+        android:title="Doanh Thu Tổng Hợp Quí"
+        app:showAsAction="never"/>
+<item
+        android:title="Doanh Thu Theo Sản Phẩm"
+
+        android:id="@+id/menuspbc"
+        app:showAsAction="never"/>
+
+<item
+        android:title="Thống Kê Tổng Quan"
+
+        android:id="@+id/menutongquang"
+        app:showAsAction="never"/>
+
+                   <item
+                       android:title="Báo cáo công nợ khách hàng"
+
+                       android:id="@+id/menubccnkh"
+                       app:showAsAction="never"/>
+
+                   <item
+                       android:title="Báo Cáo Tồn Kho"
+                       android:id="@+id/menubctk"
+                       app:showAsAction="never"/>
+           <item
+               android:title="Báo Cáo Kết Quả Doanh Thu - Công Nợ - Tồn Kho"
+               android:id="@+id/menubcdtcntk"
+               app:showAsAction="never"/>
+
+               </menu>
+           </item>
+
+<item android:title="Trình Dược Viên"
+
+    android:id="@+id/menusp">
+    <menu>
+        <item android:title="Báo Cáo Doanh Thu TDV" android:id="@+id/menubhtdv"></item>
+        <item android:title="Báo Cáo Tiền Về TDV" android:id="@+id/menutvtdv"></item>
+        <item android:title="Báo Cáo Công Nợ TDV" android:id="@+id/menucntdv"></item>
+        <item android:title="Theo Dõi Giao Hàng" android:id="@+id/menutdghtdv"></item>
+        <item android:title="Báo Cáo Hàng Thầu CN" android:id="@+id/menubchtcn"></item>
+
+        <item android:title="Chương trình khuyến mãi" android:id="@+id/menuctkmtdv">
+
+            <menu>
+                <item android:title="Chương trình KHTT" android:id="@+id/menuctkhtt"></item>
+                <item android:title="Chương trình Gimmick" android:id="@+id/menuctgimmick">
+                    <menu>
+                        <item android:title="Gimick - Áo Mưa" android:id="@+id/menuctgimmickaomua"></item>
+                        <item android:title="Gimick - Bút Bi" android:id="@+id/menuctgimmickbutbi"></item>
+
+                        <item android:title="Gimick - Quà Tặng Lịch" android:id="@+id/menuctgimmickquatanglich"></item>
+                        <item android:title="Gimick - Quà Tết" android:id="@+id/menuctgimmickquatet"></item>
+                        <item android:title="Gimick - Quà Tết CNT" android:id="@+id/menuctgimmickquatetCNT"></item>
+                        <item android:title="Gimick - Quà Bánh Trung Thu" android:id="@+id/menuctgimmickquabtt"></item>
+                    </menu>
+
+                </item>
+
+                <item android:title="Chương trình SNKH" android:id="@+id/menuctsnkh"></item>
+            </menu>
+
+        </item>
+    </menu>
+</item>
+
+           <item android:title="Giám Sát TDV"
+
+
+               android:id="@+id/menugstdv">
+               <menu>
+                   <item android:title="1.Giám sát đơn hàng TDV" android:id="@+id/menugsdhtdv"></item>
+
+                   <item
+                       android:title="2.Báo cáo viếng thăm khách hàng" android:id="@+id/menubcvtkh" app:showAsAction="never"/>
+
+                   <item
+                       android:title="3.Giám Sát viếng thăm khách hàng" android:id="@+id/menugsvtkh" app:showAsAction="never"/>
+
+                   <item
+                       android:title="4.Khách hàng chưa phát sinh doanh thu" android:id="@+id/menubckhkpsdt" app:showAsAction="never"/>
+               </menu>
+           </item>
+
+       </menu>
+
+
+   </item>
+</menu>

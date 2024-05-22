@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvtvtddhtdv"
+
+            android:layout_weight="3"
+            android:text="Tên Vt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvkmddhtdv"
+
+            android:layout_weight="1"
+            android:text="Km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvctkmddhtdv"
+            android:layout_weight="1"
+            android:text="CTKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvgtcddhtdv"
+            android:layout_weight="2"
+            android:text="Giá Trị Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/edslddhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginStart="2dip"
+            android:singleLine="true"
+            android:inputType="number"
+
+            android:hint="Số lượng"
+
+            android:layout_weight="1">
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/tvdgddhtdv"
+            android:layout_weight="1"
+            android:text="đơn giá"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvttddhtdv"
+            android:layout_weight="1"
+            android:text="thành tiền"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <Button
+            android:focusable="false"
+            android:id="@+id/btsuadhtdv"
+            android:text="Sửa"
+            android:textColor="#ff0"
+            android:background="@drawable/botron3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"></Button>
+
+        <Button
+            android:focusable="false"
+            android:id="@+id/btxoadhtdv"
+            android:text="Xóa"
+            android:textColor="#ff0"
+            android:background="@drawable/botron3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

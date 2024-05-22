@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_dsdondathang">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="30dp"
+        android:background="#00BFA5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <TextView
+
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="130dp"
+
+            android:text="Đối tượng"
+            android:textSize="14sp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="280dp"
+
+            android:text="Ngày Ct"
+            android:textSize="14sp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="430dp"
+            android:text="Tổng tiền"
+            android:textSize="14sp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="570dp"
+            android:text="Tình trạng"
+            android:textSize="14sp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+
+            android:id="@+id/listviewDsDonHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492" />
+
+    </LinearLayout>
+
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvsttbktdv"
+            android:textSize="0dp"
+            android:hint=""
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvsoctbktdv"
+            android:textSize="14dp"
+            android:layout_weight="2"
+            android:hint="Số Ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvngayctbktdv"
+            android:textSize="14dp"
+            android:layout_weight="2"
+            android:hint="Ngày Ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvtnbktdv"
+            android:textSize="14dp"
+            android:layout_weight="3"
+            android:hint="Tiền nộp"
+            android:textAlignment="textEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvtgbktdv"
+            android:textSize="14dp"
+            android:layout_weight="3"
+            android:hint="Tiền gốc"
+            android:textAlignment="textEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

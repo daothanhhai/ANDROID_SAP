@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_doanhthutheokhachhang">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <AutoCompleteTextView
+                android:layout_weight="5"
+                android:id="@+id/atcquy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Chọn quí"
+                android:text=""
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imagequy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/atcquy"
+                android:layout_alignRight="@id/atcquy"
+                android:layout_alignBottom="@id/atcquy"
+                app:srcCompat="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+            <AutoCompleteTextView
+                android:layout_weight="5"
+                android:id="@+id/atcnamkh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Chọn năm"
+                android:text=""
+                android:textSize="14dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewtongdoanhthu" />
+
+            <ImageView
+                android:id="@+id/imagenamkh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/atcnam"
+                android:layout_alignRight="@id/atcnam"
+                android:layout_alignBottom="@id/atcnam"
+                app:srcCompat="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/textViewtongdoanhthu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Tổng Dt"
+                android:textAlignment="center"
+                android:textColor="#2196F3"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_weight="4"
+                android:id="@+id/bardt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF8">
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <GridView
+                android:layout_weight="5"
+                android:id="@+id/gridviewdtkh"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/border" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

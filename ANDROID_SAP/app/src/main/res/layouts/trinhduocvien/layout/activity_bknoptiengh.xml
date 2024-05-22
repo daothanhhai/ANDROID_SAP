@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_bknoptiengh">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:hint="Ngay"
+            android:id="@+id/edngaybkgh"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:hint="Số"
+            android:id="@+id/edsobkgh"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <AutoCompleteTextView
+            android:layout_weight="6"
+            android:id="@+id/actnlpbkgh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Người lập phiếu"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagenlpbkgh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_weight="7"
+            android:id="@+id/actnvghbkgh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nhân viên giao hàng"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagenvghbkgh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+        <Button
+            android:id="@+id/btlhdbkgh"
+            android:layout_weight="1"
+            android:text="Load HD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:id="@+id/btlmbkgh"
+            android:layout_weight="1"
+            android:text="Làm mới"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_weight="7"
+            android:id="@+id/acttdghgh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phiếu Theo Dõi Giao Hàng"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagetdghgh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edldnbkgh"
+            android:hint="Lý do nộp"
+            android:textSize="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_weight="10"
+            android:id="@+id/actsohdbkgh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Số hóa đơn"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageshdbkgh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#00B8D4"
+            android:id="@+id/tvsohdbktmgh"
+            android:hint="Số HD"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#00B8D4"
+            android:id="@+id/tvngayhdbktmgh"
+            android:hint="Ngày HD"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <EditText
+            android:textStyle="bold"
+            android:textColor="#DD2C00"
+            android:layout_weight="5"
+            android:id="@+id/edtnbktmgh"
+            android:hint="Tiền nộp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btthembkgh"
+            android:text="Thêm"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:id="@+id/btluubkgh"
+            android:text="Lưu"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_weight="1"
+            android:choiceMode="multipleChoice"
+            android:id="@+id/lvbkgh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:background="#EAEAE6"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Tổng cộng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_weight="9"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd"
+                    android:background="#FAF7F6"
+                    android:textColor="#FF6D00"
+                    android:id="@+id/tvtongcongbkgh"
+                    android:hint="Tổng cộng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

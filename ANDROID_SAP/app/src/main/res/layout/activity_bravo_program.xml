@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/category_while"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_page">
+
+
+    <RelativeLayout
+        android:gravity="center"
+
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_top_panel">
+    </RelativeLayout>
+
+ <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <TextView
+         android:id="@+id/textViewtensp"
+         android:textSize="20dp"
+         android:textAlignment="center"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/botronsearch"
+         android:fontFamily="sans-serif-condensed-light"
+         android:text="OPC-MOBILE"
+         android:textStyle="bold"
+         android:textColor="#FF9800" />
+
+     <ImageView
+
+         android:id="@+id/imageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:srcCompat="@mipmap/ic_launcher_opc_app_mobile"/>
+ </LinearLayout>
+
+
+   <LinearLayout
+
+
+       android:layout_marginTop="50dp"
+
+
+       android:weightSum="10"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+       <Button
+           android:layout_gravity="center"
+           android:layout_marginLeft="20dp"
+           android:id="@+id/buttondmkh"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/botron3"
+           android:drawableTop="@drawable/category1"
+           android:text="Danh mục"
+           android:textColor="#FBFBFA" />
+
+       <Button
+           android:layout_gravity="center"
+           android:layout_marginLeft="30dp"
+           android:layout_weight="3"
+           android:id="@+id/buttonddh"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:background="@drawable/botronxanhla"
+           android:drawableTop="@drawable/sale1"
+           android:text="Bán hàng"
+           android:textColor="#FDFDF9"
+           android:textStyle="bold" />
+
+       <Button
+           android:layout_gravity="center"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="30dp"
+           android:layout_weight="3"
+           android:id="@+id/buttondmbc"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/botrondo"
+           android:drawableTop="@drawable/baocao1"
+           android:text="Báo Cáo"
+           android:textColor="#F6F6F5"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+    <LinearLayout
+
+        android:background="@drawable/shape_login_panel"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:text="viếng thăm"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:layout_weight="2"
+                android:id="@+id/buttonvtkh"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botron1"
+                android:drawableTop="@drawable/visit_while_18"
+                android:textColor="#FDFDF9" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="DS Đơn hàng"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_weight="2"
+                android:id="@+id/buttondsdhtdv"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botronxanh"
+                android:drawableTop="@drawable/outline_receipt_white_18"
+                android:textColor="#FDFDF9" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="Đơn hàng"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:layout_weight="2"
+                android:id="@+id/buttondhtdv"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botronxanh"
+                android:drawableTop="@drawable/outline_sell_white_18"
+                android:textColor="#FDFDF9"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginLeft="60dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:id="@+id/buttondoipass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:background="@drawable/botron1"
+                android:drawableTop="@drawable/outline_receipt_white_18"
+                android:text="Đổi\nPass"
+                android:textColor="#FDFDF9" />
+
+
+
+            <Button
+
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:layout_marginLeft="60dp"
+
+                android:id="@+id/buttonkhachhangonline"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botronvang"
+                android:drawableTop="@drawable/outline_receipt_white_18"
+                android:text="KH/Online"
+                android:textColor="#FDFDF9" />
+
+
+            <Button
+
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:layout_marginLeft="60dp"
+
+                android:id="@+id/buttonwebsite"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botronxanhla"
+                android:drawableTop="@drawable/outline_receipt_white_18"
+                android:text="WEBSITE"
+                android:textColor="#FDFDF9" />
+
+            <Button
+
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:layout_marginLeft="60dp"
+
+                android:id="@+id/buttonbkhdbh"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botronvang"
+                android:drawableTop="@drawable/outline_receipt_white_18"
+                android:text="Hóa đơn BH"
+                android:textColor="#FDFDF9" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottum_nav"
+        app:itemBackground="@android:color/darker_gray"
+        app:itemIconTint="@color/custom_color_bottom_nav"
+        app:itemTextColor="@color/custom_color_bottom_nav"/>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/checkinviengtham"
+    >
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:id="@+id/tvmkhvt"
+            android:layout_weight="3"
+            android:text="Mã Kh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:id="@+id/tvtkhvt"
+            android:layout_weight="7"
+            android:text="Tên kh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="9"
+                android:paddingBottom="20dp"
+                android:id="@+id/tvdcvt"
+                android:text="địa chỉ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+            <Button
+                android:visibility="visible"
+                android:id="@+id/buttonbando"
+                android:text="Bản đồ"
+                android:paddingBottom="20dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="9"
+                android:paddingBottom="20dp"
+                android:id="@+id/tvdtvt"
+                android:text="điện thoại"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <ImageView
+                android:id="@+id/imglotrinhvtkh"
+                android:paddingTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lotrinh">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <Button
+
+            android:drawableLeft="@drawable/dienthoai"
+            android:layout_weight="3"
+
+            android:id="@+id/buttondhvt"
+            android:background="#095A33"
+            android:textColor="#FBFBF5"
+            android:text="Đặt hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:drawableLeft="@drawable/baocao"
+
+            android:layout_weight="3"
+            android:id="@+id/buttonbcvt"
+            android:background="#FF6D00"
+            android:textColor="#FBFBF5"
+            android:text="Báo cáo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:drawableLeft="@drawable/checkin"
+            android:layout_weight="4"
+            android:id="@+id/buttoncheckinvt"
+            android:background="#0091EA"
+            android:textColor="#FBFBF5"
+            android:text="Check In"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

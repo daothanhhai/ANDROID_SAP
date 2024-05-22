@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="1.Danh mục khách hàng" android:id="@+id/menudmkh"/>
+    <item android:title="2.Danh mục bảng giá" android:id="@+id/menudmbg"/>
+    <item android:title="3.Danh mục đối tác" android:id="@+id/menudmdt"/>
+</menu>

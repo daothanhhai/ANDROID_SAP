@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FDFDF7"
+    android:id="@+id/main_layout"
+    tools:context="com.example.erp_tuyen.loginsap.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/favicon"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:text="OPC - Hệ Thống Bán Hàng SAP"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:background="@drawable/shape_left_panel">
+    </RelativeLayout>
+
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_marginTop="170dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+       <LinearLayout
+           android:id="@+id/llloginpanel"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="200dp"
+           android:background="@drawable/shape_login_panel"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:orientation="vertical"
+           tools:ignore="MissingConstraints">
+
+
+           <TextView
+
+               android:id="@+id/tv"
+               android:textStyle="bold"
+               android:textColor="#0B2CD5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintBottom_toTopOf="@+id/llloginpanel"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+
+
+               android:text="OPC-SAP"
+               android:textSize="30dp" />
+
+
+
+           <ProgressBar
+               android:id="@+id/pgbLoading"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="?android:attr/progressBarStyleLargeInverse"
+               android:layout_centerHorizontal="true"
+               android:indeterminate="false" />
+
+           <EditText
+               android:id="@+id/edtUserName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Tên đăng nhập"
+               android:inputType="text"
+               android:text="" />
+
+           <EditText
+               android:id="@+id/edtPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Mật khẩu"
+               android:text=""
+               android:inputType="textPassword" />
+
+           <LinearLayout
+               android:layout_weight="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <CheckBox
+                   android:layout_weight="2"
+                   android:id="@+id/cbrmbpass"
+                   android:text="Remember Me:"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+               </CheckBox>
+
+               <AutoCompleteTextView
+                   android:layout_weight="8"
+                   android:id="@+id/autoviewdvcs"
+                   android:hint="Đơn vị cơ sở"
+                   android:text=""
+                   android:inputType="text"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:id="@+id/imagedvcs"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignTop="@id/actv2"
+                   android:layout_alignRight="@id/actv2"
+                   android:layout_alignBottom="@id/actv2"
+                   android:padding="5dp"
+                   android:src="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:orientation="horizontal">
+
+               <Button
+
+                   android:id="@+id/btnLogin"
+                   android:background="@drawable/botron_button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:textColor="#FAF5F5"
+                   android:text="Đăng nhập"
+
+                   />
+
+               <Button
+                   android:id="@+id/btnThoat"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:textColor="#FFFFFF"
+                   android:textStyle="bold"
+                   android:background="@drawable/botron_button"
+                   android:text="Thoát" />
+
+
+
+           </LinearLayout>
+
+
+           <TextView
+               android:id="@+id/tvResult"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center" />
+
+
+
+
+
+       </LinearLayout>
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="#2196F3"
+
+            android:text="Phiên bản b1.1.pl release 2021"
+            android:textColor="#FBFAFA"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_marginTop="100dp"
+            android:id="@+id/opc_sap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/opc_sap"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

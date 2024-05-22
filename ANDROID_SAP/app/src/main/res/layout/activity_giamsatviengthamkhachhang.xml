@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_giamsatviengthamkhachhang">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/editTexttngsvtkh"
+            android:hint="Từ Ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"/>
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/editTextdngsvtkh"
+            android:hint="Đến Ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+
+        <AutoCompleteTextView
+            android:layout_weight="5"
+            android:id="@+id/actgsvtkh"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Ma Đt"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagegsvtkh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/buttongsvtkh"
+            android:text="Xem BC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_weight="7"
+            android:id="@+id/acttdvvtkh"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="TDV"
+            android:text="" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagetdvvtkh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:weightSum="10"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+
+                    android:id="@+id/tbgsvtkh"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:padding="20dp"
+                        android:background="#00BFA5"
+                        android:id="@+id/tbrowgsvtkh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:freezesText="true"
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+
+                            android:text="Ngày Vt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:freezesText="true"
+                            android:id="@+id/tvtenkhgsvtkh"
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+                            android:layout_weight="5"
+                            android:text="Khách hàng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:freezesText="true"
+                            android:id="@+id/tvdiachigsvtkh"
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Địa chỉ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:freezesText="true"
+                            android:id="@+id/tvtdvgsvtkh"
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="TDV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:freezesText="true"
+                            android:textAlignment="center"
+                            android:id="@+id/tvspvtgsvtkh"
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Số Phút VT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+
+                        <TextView
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Hình ảnh"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+                        <TextView
+
+                            android:textColor="#FFFFFA"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Nội dung"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp">
+
+                        </TextView>
+
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

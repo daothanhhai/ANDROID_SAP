@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kết nối SQL Server</string>
+    <string name="map_api_key">AIzaSyCsnpCREc8KCM6NGfg9DKAj1XO4VH6oByI</string>
+    <string name="action_home">Home</string>
+    <string name="action_tdv">TDV</string>
+    <string name="action_gh">GH</string>
+</resources>

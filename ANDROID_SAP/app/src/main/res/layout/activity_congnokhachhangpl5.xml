@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_congnokhachhangpl5">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittexttncnpl5"
+            android:hint="Từ ngày"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittextdncnpl5"
+            android:hint="Đến Ngày"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:layout_weight="8"
+            android:id="@+id/actcnpl5"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Ma Đt"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagecnpl5"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+        <Button
+            android:layout_weight="0"
+            android:background="@drawable/botronsearch"
+            android:id="@+id/buttonbccnpl5"
+            android:text="Xem BC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:id="@+id/tbcnpl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:id="@+id/tbrcnpl5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvdtcnpl5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Khách hàng"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvsoctcnpl5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số Ct"
+                            android:typeface="sans"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvngayctcnpl5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ngày Ct"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtdvcnpl5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TDV"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvtiennocnkhpl5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tổng tiền"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+<LinearLayout
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_weight="8"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#D50000"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tổng Cộng">
+
+    </TextView>
+
+    <TextView
+        android:layout_weight="2"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#D50000"
+        android:id="@+id/tvtongcongcnpl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tổng Cộng">
+
+    </TextView>
+</LinearLayout>
+
+</LinearLayout>
+

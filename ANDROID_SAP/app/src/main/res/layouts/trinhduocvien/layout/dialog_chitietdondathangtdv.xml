@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/tvtenvtctdhtdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvkhuyenmaictdhtdv"
+
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp"></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvctkmctdhtdv"
+
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp"></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvgtcctdhtdv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvsoluongctdhtdv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvdongiactdhtdv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tvthanhtienctdhtdv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvctddhtdv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

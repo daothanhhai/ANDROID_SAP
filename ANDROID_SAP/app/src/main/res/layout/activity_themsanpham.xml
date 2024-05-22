@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity_themsanpham">
+
+
+    <ImageView
+        android:id="@+id/imagesanpham"
+        android:layout_width="305dp"
+        android:layout_height="370dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+    <EditText
+        android:id="@+id/editTextmasanpham"
+        android:layout_width="74dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/buttonchonsanpham"
+        style="@style/Widget.AppCompat.ActionButton.CloseMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Chọn sản phẩm"
+         />
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_tienvetrinhduocvien">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTexttntvtdv"
+            android:hint="Từ Ngày"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/editTextdntvtdv"
+            android:hint="Đến Ngày"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/buttonbctvtdv"
+            android:text="Xem BC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/bartvtdv"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFF8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UnknownId">
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:id="@+id/tbtvtdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:id="@+id/tbrow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvtvtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Trình dược viên"
+                            android:layout_weight="2"
+
+                            android:typeface="sans"
+                            android:textSize="12dp"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtienvetdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tiền Về"
+                            android:typeface="sans"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvkhtvtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Kế hoạch"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtltvtdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ"
+
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

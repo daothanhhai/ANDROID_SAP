@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_thunokhachhang">
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittexttntnkh"
+            android:hint="Từ ngày"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edittextdntnkh"
+            android:hint="Đến Ngày"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:layout_weight="8"
+            android:id="@+id/acttnkh"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Ma Đt"
+            android:text="" />
+
+        <ImageView
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagetnkh"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+
+        <Button
+            android:layout_weight="0"
+            android:background="@drawable/botronsearch"
+            android:id="@+id/buttonbctnkh"
+            android:text="Xem BC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:layout_weight="0"
+            android:background="@drawable/botronsearch"
+            android:id="@+id/buttonluutnkh"
+            android:text="Lưu BK"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="2"
+            android:text="Số HĐ"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_weight="2"
+            android:text="Ngày HĐ"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="2"
+            android:text="Mã KH"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="2"
+            android:text="Tên KH"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:paddingLeft="70dp"
+            android:layout_weight="2"
+            android:text="Tiền gốc"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="2"
+            android:text="Tiền nợ"
+            android:background="#00BCD4"
+            android:textColor="#F4F3F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:id="@+id/listviewtnkh"
+                android:choiceMode="multipleChoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

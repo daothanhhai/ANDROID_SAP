@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Sản phẩm" android:id="@+id/menusp">
+        <menu>
+            <item android:title="Sản phẩm chinh" android:id="@+id/menuspchinh"></item>
+            <item android:title="Sản phẩm mới" android:id="@+id/menuspm"></item>
+            <item android:title="Sản phẩm bỗ dưỡng" android:id="@+id/menuspbd"></item>
+            <item android:title="Sản phẩm điều kinh" android:id="@+id/menuspdk"></item>
+            <item android:title="Sản phẩm hô hấp" android:id="@+id/menusphh"></item>
+            <item android:title="Sản phẩm thanh nhiệt giải độc" android:id="@+id/menusptngd"></item>
+            <item android:title="Sản phẩm thần kinh-cơ" android:id="@+id/menusptkc"></item>
+            <item android:title="Sản phẩm tiêu hóa-gan mật" android:id="@+id/menuspthgm"></item>
+            <item android:title="Sản phẩm tiết niệu" android:id="@+id/menusptn"></item>
+            <item android:title="Sản phẩm tim mạch-tạo máu" android:id="@+id/menusptmtm"></item>
+            <item android:title="Sản phẩm vitamin-khoáng chất" android:id="@+id/menuspvtmkc"></item>
+            <item android:title="Sản phẩm dùng ngoài" android:id="@+id/menuspdn"></item>
+        </menu>
+    </item>
+
+    <item android:title="Quảng Cáo" android:id="@+id/menuquangcao">
+        <menu>
+            <item android:title="QC Sản phẩm chinh" android:id="@+id/menuqcspc"></item>
+            <item android:title="QC Sản phẩm mới" android:id="@+id/menuqcspm"></item>
+        </menu>
+    </item>
+</menu>

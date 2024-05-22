@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_khtttrinhduocvien">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTexttnkhtttdv"
+            android:hint="Từ ngày"
+            android:textSize="11dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextdnkhtttdv"
+            android:hint="Đến Ngày"
+            android:textSize="11dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actkhkhtttdv"
+            android:textSize="11dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:hint="Đối tượng"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagekhtttdv"
+            android:padding="5dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+        <Button
+            android:id="@+id/buttonbckhtttdv"
+            android:text="Xem BC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <HorizontalScrollView
+            android:id="@+id/progress_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal|vertical">
+                <TableLayout
+                    android:id="@+id/tbkhtttdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_alignParentStart="true"
+                    android:stretchColumns="*"
+                    android:background="#FBFBF8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TableRow
+                        android:id="@+id/tbrowkhtttdv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:id="@+id/tvdtkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:text="Đối tượng"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+
+                            android:typeface="sans"
+                            android:textSize="12dp"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvlkhddkhtttdv"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:text="Loại KH ĐD"
+                            android:typeface="sans"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvlkhtdkhtttdv"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:text="Loại KH TD"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:padding="10dp"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtinhtpkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỉnh/TP"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvtdvkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Trình dược viên"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvdoitackhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="Đối tác"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvsinhnhatkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Sinh nhật"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvgioitinhkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Giới tính"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvdidongkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Di động"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvhopdongkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Hợp đồng"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvopckhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="OPC"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvopcbdkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="OPCBD"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvhoaduockhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="HD2"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvdgiamtrubdkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Giảm trừ Cồn >500Ml"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvtanggiamtvopckhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tăng Giảm OPC"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvtanggiamtvbdkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tăng Giảm Cồn"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtanggiamtvhdkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tăng giảm HD"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtienvettkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tiền về Tính Thưởng"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvdtspmkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Doanh Thu SPM"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvdtspmtkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Doanh Thu SPMT"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtlttheomuckhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng theo mức"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvtlttheospmkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng theo SPM"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtlttheospmtkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng theo SPMT"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtlttongcongkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng tổng cộng"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvgtttkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Giá trị trả thưởng"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvgiatriqttkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Giá trị quà tặng thêm"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvsoluongqttkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số lượng quà tặng thêm"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvttcskhhlkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TT CSKH hợp lệ"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtlttheomuctkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng theo mức TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtltspmtkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng SPM TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvtltspmttkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng SPMT TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvtlttctkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tỷ lệ thưởng tổng cộng TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvgttttkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Giá trị thưởng TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvgtqtttkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Giá trị QTT TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvslqtttkkhtttdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số lượng QTT TK"
+                            android:padding="10dp"
+                            android:textSize="12dp"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            android:textColor="#0626DC"
+                            android:background="@drawable/border"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

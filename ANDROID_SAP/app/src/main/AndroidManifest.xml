@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.erp_tuyen.loginsap">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_opc_app_mobile"
+        android:label="OPC-APP-SAP"
+        android:roundIcon="@mipmap/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_addkh"></activity>
+        <activity android:name=".activity_bangkehoadonbanhang" />
+        <activity android:name=".activity_chitietbknoptiengh" />
+        <activity android:name=".activity_dsbknoptiengh" />
+        <activity android:name=".activity_xacnhantheodoigh" />
+        <activity android:name=".activity_layoutgh" />
+        <activity android:name=".activity_layouttdv" />
+        <activity android:name=".activity_xacnhangiaohang" />
+        <activity android:name=".activity_bknoptiengh" />
+        <activity android:name=".activity_bknoptientdv" />
+        <activity android:name=".activity_baocaodtcntk" />
+        <activity android:name=".activity_lotrinhviengthamkhachhang" />
+        <activity android:name=".activity_baocaothaucn" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity android:name=".activity_googlemap" />
+        <activity android:name=".activity_dondathangtdv" />
+        <activity android:name=".activity_gimickbanhtrungthu" />
+        <activity android:name=".activity_gimickquatetcnt" />
+        <activity android:name=".activity_gimickquatet" />
+        <activity android:name=".activity_gimickquatanglich" />
+        <activity android:name=".activity_gimickbutbi" />
+        <activity android:name=".activity_giamsatviengthamkhachhang" />
+        <activity android:name=".activity_gimickaomua" />
+        <activity android:name=".activity_congnokhachhangpl5" />
+        <activity android:name=".activity_baocaoviengthamkhachhang" />
+        <activity android:name=".activity_checkinviengthamkhachhang" />
+        <activity android:name=".activity_donhangtheodoituongviengtham" />
+        <activity android:name=".activity_viengthamkhachhang" />
+        <activity android:name=".activity_giamsatdonhangtdv" />
+        <activity android:name=".activity_khkhongpsdoanhthu" />
+        <activity android:name=".activity_sanphamthankinhco" />
+        <activity android:name=".activity_sanphamthanhnhietgiaidoc" />
+        <activity android:name=".activity_sanphamhohap" />
+        <activity android:name=".activity_khtttrinhduocvien" />
+        <activity android:name=".activity_congnotheokhachhang" />
+        <activity android:name=".activity_thunokhachhang" />
+        <activity android:name=".activity_doitac" />
+        <activity android:name=".activity_khachhang" />
+        <activity android:name=".activity_snkhtrinhduocvien" />
+        <activity android:name=".activity_tienvetrinhduocvien" />
+        <activity android:name=".activity_tonkhotrinhduocvien" />
+        <activity android:name=".activity_theodoigiaohangtdv" />
+        <activity android:name=".activity_doanhthutrinhduocvien" />
+        <activity android:name=".activity_prosure_spm" />
+        <activity android:name=".activity_giohang" />
+        <activity android:name=".activity_sanphamdieukinh" />
+        <activity android:name=".activity_sanphamboduong" />
+        <activity android:name=".activity_sanphammoi" />
+        <activity android:name=".activity_themsanpham" />
+        <activity android:name=".activity_sanphamchinh" />
+        <activity android:name=".activity_tongquangdoanhthu" />
+        <activity android:name=".activity_doanhthutheothang" />
+        <activity android:name=".activity_doanhthutheokhachhang" />
+        <activity android:name=".activity_dsdondathang" />
+        <activity android:name=".activity_dondathang" />
+        <activity android:name=".activity_topsanpham" />
+        <activity android:name=".activity_banggia" />
+        <activity android:name=".activity_doanhthu" />
+        <activity android:name=".Program_Bravo" />
+        <activity android:name=".SinhVienActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserActivity" />
+    </application>
+
+</manifest>
