@@ -22,7 +22,7 @@ import android.net.Uri;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Program_Bravo extends AppCompatActivity {
-    private static final long INTERVAL = 3*60*60 * 1000;
+    private static final long INTERVAL = 3*60*60 * 1000; // 3 tieng
     private static final int MAX_RUN_COUNT = 3; // Số lần tối đa
     private int runCount = 0; // Biến đếm
     Button btdmkh,btdmbc,btddh,btdoipass,btkhachhangonline,btwebsite;
