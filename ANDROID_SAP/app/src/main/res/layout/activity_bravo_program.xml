@@ -211,7 +211,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/botronxanhla"
                 android:drawableTop="@drawable/outline_receipt_white_18"
-                android:text="WEBSITE"
+                android:text="OPCPHARMA.COM"
                 android:textColor="#FDFDF9" />
 
             <Button

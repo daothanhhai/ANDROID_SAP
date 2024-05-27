@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MOBILE.iml" filepath="$PROJECT_DIR$/.idea/MOBILE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/APP_SAP.iml" filepath="$PROJECT_DIR$/.idea/APP_SAP.iml" />
     </modules>
   </component>
 </project>
